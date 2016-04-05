@@ -1,0 +1,33 @@
+
+<div>
+    <h2><span>Tweet</span> {{vm.tweet.id}}</h2>
+    <hr>
+    <dl class="dl-horizontal">
+        <dt><span>Userid</dt></dt>
+        <dd>
+            <span>{{vm.tweet.userid}}<span>
+        </dd>
+        <hr>
+        <dt><span translate="tweeterApp.tweet.publication_date">Publication_date</dt></dt>
+        <dd>
+            <span>{{vm.tweet.publication_date | date:'medium'}}</span>
+        </dd>
+        <hr>
+        <dt><span>Tweet</dt></dt>
+        <dd>
+            <span>{{vm.tweet.tweet}}<span>
+        </dd>
+        <hr>
+        <dt><span>tweetuserid</span></dt>
+        <dd>
+            {{vm.tweet.tweetuserid.id}}
+        </dd>
+        <hr>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+</div>

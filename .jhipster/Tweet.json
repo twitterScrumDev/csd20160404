@@ -1,0 +1,40 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "tweetuserid",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "userid",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "publication_date",
+            "fieldType": "ZonedDateTime",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "tweet",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "140"
+        }
+    ],
+    "changelogDate": "20160405135229",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "tweet",
+    "pagination": "no"
+}
